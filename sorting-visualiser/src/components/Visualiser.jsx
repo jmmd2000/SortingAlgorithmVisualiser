@@ -22,9 +22,7 @@ const Visualizer = () => {
   }, []);
 
   const soundHandler = () => {
-    console.log(sound);
     setSound(!sound);
-    console.log(sound);
   };
 
   const generateRandomBars = () => {
