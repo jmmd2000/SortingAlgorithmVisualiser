@@ -6,7 +6,8 @@ const selectionSort = async (bars, setBars, speed, sound) => {
   for (let i = 0; i < sortedBars.length - 1; i++) {
     let minIndex = i;
     // Highlight the minimum bar
-    sortedBars[minIndex].color = "#ff6b6b";
+    // sortedBars[minIndex].color = "#ff6b6b";
+    sortedBars[minIndex].color = "#339af0";
 
     setBars([...sortedBars]);
     // Delay between cycles
@@ -25,7 +26,8 @@ const selectionSort = async (bars, setBars, speed, sound) => {
         sortedBars[minIndex].color = "#845ef7";
         minIndex = j;
         // Highlight the new minimum bar in red
-        sortedBars[minIndex].color = "#ff6b6b";
+        // sortedBars[minIndex].color = "#ff6b6b";
+        sortedBars[minIndex].color = "#339af0";
       } else {
         // Reset the color of the compared bar
       }

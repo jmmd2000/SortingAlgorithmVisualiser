@@ -39,8 +39,10 @@ const merge = async (bars, start, mid, end, setBars, speed, sound) => {
   let k = start;
 
   while (i < left.length && j < right.length) {
-    left[i].color = "#ff6b6b"; // Highlight the left bar being compared
-    right[j].color = "#ff6b6b"; // Highlight the right bar being compared
+    // left[i].color = "#ff6b6b"; // Highlight the left bar being compared
+    left[i].color = "#339af0"; // Highlight the left bar being compared
+    // right[j].color = "#ff6b6b"; // Highlight the right bar being compared
+    right[j].color = "#339af0"; // Highlight the right bar being compared
 
     if (left[i] !== undefined && sound) {
       playSound(left[i].height);

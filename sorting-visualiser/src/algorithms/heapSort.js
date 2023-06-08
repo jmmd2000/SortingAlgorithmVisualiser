@@ -51,7 +51,8 @@ const heapSort = async (bars, setBars, speed, sound) => {
 
     for (let i = n - 1; i > 0; i--) {
       // Highlight the current bar in red
-      sortedBars[i].color = "#ff6b6b";
+      // sortedBars[i].color = "#ff6b6b";
+      sortedBars[i].color = "#339af0";
       [sortedBars[0], sortedBars[i]] = [sortedBars[i], sortedBars[0]];
       setBars([...sortedBars]);
       if (sound) {

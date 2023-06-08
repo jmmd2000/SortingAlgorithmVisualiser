@@ -5,7 +5,8 @@ const bubbleSort = async (bars, setBars, speed, sound) => {
 
   for (let i = 0; i < sortedBars.length - 1; i++) {
     for (let j = 0; j < sortedBars.length - i - 1; j++) {
-      sortedBars[j].color = "#ff6b6b"; // Highlight the j bar in red
+      // sortedBars[j].color = "#ff6b6b"; // Highlight the j bar in red
+      sortedBars[j].color = "#339af0"; // Highlight the j bar in blue
 
       setBars([...sortedBars]); // Update the state to trigger re-rendering
 

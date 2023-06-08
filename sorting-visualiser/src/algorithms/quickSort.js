@@ -47,7 +47,8 @@ const quickSort = async (bars, setBars, speed, sound) => {
       const pivotIndex = await partition(low, high);
 
       // Mark the pivot bar
-      sortedBars[pivotIndex].color = "#ff6b6b";
+      // sortedBars[pivotIndex].color = "#ff6b6b";
+      sortedBars[pivotIndex].color = "#339af0";
 
       setBars([...sortedBars]);
 
