@@ -56,6 +56,7 @@ const Controls = ({
         <select
           name="algo"
           id="algoSelect"
+          disabled={disabled}
           className={classes.algoSelect}
           onChange={(e) => {
             onAlgoChange(e.target.value);
@@ -104,6 +105,7 @@ const Controls = ({
           type="checkbox"
           name="sound"
           id="soundRadio"
+          disabled={disabled}
           defaultChecked={true}
           onChange={(e) => {
             onSoundChange(e.target.checked);

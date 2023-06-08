@@ -34,8 +34,20 @@
   border: 0.3rem solid rgb(99, 31, 163);
 }
 
+.button:disabled,
+.algoSelect:disabled {
+  background-color: #acacac;
+  border: 0.3rem solid #979797;
+  cursor: not-allowed;
+}
+
 .option:hover {
   color: white;
+}
+
+#speedSlider,
+#numberSlider {
+  background-color: red;
 }
 
 @media screen and (max-width: 800px) {
